@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define maxn 0x7f
+/*
+1、一次考虑2~n中每个数i.
+2、若v[i]=i,则i为质数,保留.
+3、扫描不大于v[i]的每个质数p,令v[i*p]=p.即在i的基础上积累一个质因子p,因为p<=v[i],所以p是i*p的最小质因数. 
+*/
+int v[maxn],prime[maxn],n,m=0; 
+int main(){
+	cin>>n;
+	memset(v,0,sizeof(v));
+	for(int i=2;i<=n;i++){
+		if(v[i]==0) {
+			v[i]=i;prime[++m]=i;
+		} 
+		for(int j=1;j<=m;j++){
+			if(prime[j]>v[i]||prime[j]>n/i) break;
+			v[i*prime[j]]=prime[j];
+		}
+	}
+	for(int i=1;i<=m;i++)
+	 cout<<prime[i]<<endl;
+	return 0;
+} 
