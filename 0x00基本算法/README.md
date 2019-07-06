@@ -21,10 +21,10 @@ tips:"/"是向0取整.
 n为奇数，则n^1=n-1\
 n为偶数，则n^1=n+1\
 用于邻接表的储存.
-#### 7、[lowbit运算的概念理解和推导.](https://github.com/zezewww/algorithm_learning/blob/master/0x00%E5%9F%BA%E6%9C%AC%E7%AE%97%E6%B3%95/0x00_lowbit%E8%BF%90%E7%AE%97%E6%80%BB%E7%BB%93.cpp)\
+#### 7、[lowbit运算的概念理解和推导.](https://github.com/zezewww/algorithm_learning/blob/master/0x00%E5%9F%BA%E6%9C%AC%E7%AE%97%E6%B3%95/0x00_lowbit%E8%BF%90%E7%AE%97%E6%80%BB%E7%BB%93.cpp)
 
 ### 0x02
-####下面是书中内容的一些摘抄：
+#### 下面是书中内容的一些摘抄：
 _1、一个实际问题的各种可能情况构成的集合通常称为“状态空间”，而程序的运行则是对于状态空间的遍历，算法和数据结构则是通过划分、归纳、提取、抽象来帮助提高程序遍历的
 状态空间效率。递推和递归就是程序遍历状态空间的两种基本方式._\
 _2、递推：**以已知的“问题边界”为起点向“原问题”正向推导的扩展方式就是递推.**_\
